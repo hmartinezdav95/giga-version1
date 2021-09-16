@@ -8,8 +8,6 @@
         <!-- top extra  -->
         <header id="main_header" class="navbar-sticky">
 
-
-
             <!-- menu -->
             <div id="main_menu" class="navbar navbar-expand-lg">
                 <div class="container">

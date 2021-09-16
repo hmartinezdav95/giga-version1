@@ -34,3 +34,7 @@ use Illuminate\Support\Facades\Route;
     Route::get('/sign-in-customer-checkout', function(){
         return view('customer.sign-in-customer-checkout');
     });
+
+    Route::get('/signin-signup', function(){
+        return view('customer.signin-signup');
+    });

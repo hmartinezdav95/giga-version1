@@ -22,10 +22,12 @@ window.Vue = require('vue').default;
 Vue.component('seller-component', require('./components/seller/SellerWelcomeComponent').default);
 Vue.component('seller_registration-component', require('./components/seller/SellerRegistration').default);
 
+
+//customer
 Vue.component('sign-in-customer-checkout', require('./components/customer/SignInCustomerCheckout').default);
 
 Vue.component('customer-sign-in-component', require('./components/customer/SignInCustomerComponent').default);
-
+Vue.component('customer-signin-and-signup', require('./components/customer/SignInAndSignUp.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
