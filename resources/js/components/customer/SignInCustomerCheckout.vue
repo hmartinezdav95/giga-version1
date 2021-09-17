@@ -55,7 +55,7 @@
                             <span class="icons material-icons-outlined">favorite_border</span>
                             <span class="menu_text">Wishlist</span>
                         </a>
-                        <a href="#" class="d-flex btn_cart">
+                        <a href="#" class="d-flex btn_cart" data-bs-toggle="modal"  data-bs-target="#exampleModal" >
                             <span class="cart_counter_bubble">2</span>
                             <span class="icons material-icons-round">shopping_cart</span>
                             <span class="menu_text">Cart</span>
@@ -128,7 +128,7 @@
                     <div class="card-body">
 
 
-                        <img src="images/pics.png" class="img-fluid" alt="#">
+                        <img src="images/signin_pics.png" class="img-fluid" alt="#">
                     </div>
                 </div>
             </div>
@@ -137,33 +137,34 @@
                     <div class="card-body">
                         <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link active"
-                                    id="ex2-tab-1"
-                                    data-mdb-toggle="tab"
-                                    href="#ex2-tabs-1"
-                                    role="tab"
-                                    aria-controls="ex2-tabs-1"
-                                    aria-selected="true"
-                                ><h3 style="color:blue">SignIn</h3></a
-                                >
+                                 <a
+                                                class="nav-link active"
+                                                id="home-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#home" 
+                                                href="#home"
+                                                 role="tab"
+                                                 aria-controls="home"
+                                                aria-selected="true"
+                                            ><h3 style="color:blue"><b>Sign In</b></h3></a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a
-                                    class="nav-link"
-                                    id="ex2-tab-2"
-                                    data-mdb-toggle="tab"
-                                    href="#ex2-tabs-2"
-                                    role="tab"
-                                    aria-controls="ex2-tabs-2"
-                                    aria-selected="false"
-                                ><h3 style="color:#383838">SignUp</h3></a
-                                >
+                                                class="nav-link"
+                                                id="profile-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#profile" 
+                                                href="#profile"
+                                                 role="tab"
+                                                 aria-controls="profile"
+                                                aria-selected="true"
+                                            ><h3 style="color:#383838"><b>Sign Up</b></h3></a>
                             </li>
                         </ul>
-
-                        <br>
-                        <div class="form-group">
+                            
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="form-group">
                             <label style="float:left" for=""><b>Email *</b></label>
                             <input type="text" class="form-control form-control" name="email" placeholder="janedoe@gmail.com">
                         </div><br>
@@ -176,12 +177,137 @@
 
                                 <button class="form-control" style=" background-color:blue; border: 5px; padding: 10px 30px;
                                             text-align: center; color:white; border-radius: 12px; font-style:bold;"
-                                        type="submit">SignIn</button>
+                                        type="submit">Sign In</button>
                             </form>
                         </div>
                         <br>
                         <div class="form-group text-center">
                             <a href="#"><b style="color:blue; font-style:bold">Forgot Password?</b></a>
+                        </div>
+                </div>
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="signup-tab">
+                                    <div class="form-group">
+                            <label style="float:left" for=""><b>Email *</b></label>
+                            <input type="text" class="form-control form-control" name="email" placeholder="janedoe@gmail.com">
+                        </div><br>
+                        <div class="form-group">
+                            <label style="float:left" for=""><b>Password *</b></label>
+                            <input type="password" class="form-control form-control" name="email" placeholder="Password">
+                        </div><br>
+                        <div class="form-group text-center">
+                            <form class="form-inline text-center" action="/CustomerSignIn">
+
+                                <button class="form-control" style=" background-color:blue; border: 5px; padding: 10px 30px;
+                                            text-align: center; color:white; border-radius: 12px; font-style:bold;"
+                                        type="submit">Join now</button>
+                            </form>
+                            <p class="text-center">
+                                By joining, you agree to our <b style =" color:blue">Terms and Conditions</b> and <b style="color:blue">Privacy Policy</b>
+                            </p>
+
+                        </div>
+                        <br>
+                        
+                     </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div  class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-lg">
+                            <div class="card">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a
+                                                class="nav-link active"
+                                                id="sign-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#sign" 
+                                                href="#sign"
+                                                 role="tab"
+                                                 aria-controls="sign"
+                                                aria-selected="true"
+                                            ><h3 style="font-style:bold; color:blue"><b>Sign In</b></h3></a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a
+                                                class="nav-link"
+                                                id="signup-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#signup" 
+                                                href="#signup"
+                                                 role="tab"
+                                                 aria-controls="signup"
+                                                aria-selected="true"
+                                            ><h3 style="color:#383838"><b>Sign Up</b></h3></a>
+                                        </li>
+                                    </ul>
+                            
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="sign" role="tabpanel" aria-labelledby="sign-tab">
+                                                <div class="form-group">
+                                        <label style="float:left" for=""><b>Email *</b></label>
+                                        <input type="text" class="form-control form-control" name="email" placeholder="janedoe@gmail.com">
+                                    </div><br>
+                                    <div class="form-group">
+                                        <label style="float:left" for=""><b>Password *</b></label>
+                                        <input type="password" class="form-control form-control" name="email" placeholder="Password">
+                                    </div><br>
+                                    <div class="form-group text-center">
+                                        <form class="form-inline text-center" action="/CustomerSignIn">
+
+                                            <button class="form-control" style=" background-color:blue; border: 5px; padding: 10px 30px;
+                                                        text-align: center; color:white; border-radius: 12px; font-style:bold;"
+                                                    type="submit">Sign In</button>
+                                        </form>
+                                    </div>
+                                    <br>
+                                    <div class="form-group text-center">
+                                        <a href="#"><b style="color:blue; font-style:bold">Forgot Password?</b></a>
+                                    </div>
+                        </div>
+
+                                    <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                                            <div class="form-group">
+                                    <label style="float:left" for=""><b>Email *</b></label>
+                                    <input type="text" class="form-control form-control" name="email" placeholder="janedoe@gmail.com">
+                                </div><br>
+                                <div class="form-group">
+                                    <label style="float:left" for=""><b>Password *</b></label>
+                                    <input type="password" class="form-control form-control" name="email" placeholder="Password">
+                                </div><br>
+                                <div class="form-group text-center">
+                                    <form class="form-inline text-center" action="/CustomerSignIn">
+
+                                        <button class="form-control" style=" background-color:blue; border: 5px; padding: 10px 30px;
+                                                    text-align: center; color:white; border-radius: 12px; font-style:bold;"
+                                                type="submit">Join now</button>
+                                    </form>
+                                    <p class="text-center">
+                                        By joining, you agree to our <b style =" color:blue">Terms and Conditions</b> and <b style="color:blue">Privacy Policy</b>
+                                    </p>
+
+                                     </div>
+                                            <br>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

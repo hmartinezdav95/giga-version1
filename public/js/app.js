@@ -5501,6 +5501,132 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -43089,7 +43215,14 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c(
                       "a",
-                      { staticClass: "d-flex btn_cart", attrs: { href: "#" } },
+                      {
+                        staticClass: "d-flex btn_cart",
+                        attrs: {
+                          href: "#",
+                          "data-bs-toggle": "modal",
+                          "data-bs-target": "#exampleModal"
+                        }
+                      },
                       [
                         _c("span", { staticClass: "cart_counter_bubble" }, [
                           _vm._v("2")
@@ -43327,7 +43460,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "card-body" }, [
               _c("img", {
                 staticClass: "img-fluid",
-                attrs: { src: "images/pics.png", alt: "#" }
+                attrs: { src: "images/signin_pics.png", alt: "#" }
               })
             ])
           ])
@@ -43355,17 +43488,18 @@ var staticRenderFns = [
                         {
                           staticClass: "nav-link active",
                           attrs: {
-                            id: "ex2-tab-1",
-                            "data-mdb-toggle": "tab",
-                            href: "#ex2-tabs-1",
+                            id: "home-tab",
+                            "data-bs-toggle": "tab",
+                            "data-bs-target": "#home",
+                            href: "#home",
                             role: "tab",
-                            "aria-controls": "ex2-tabs-1",
+                            "aria-controls": "home",
                             "aria-selected": "true"
                           }
                         },
                         [
                           _c("h3", { staticStyle: { color: "blue" } }, [
-                            _vm._v("SignIn")
+                            _c("b", [_vm._v("Sign In")])
                           ])
                         ]
                       )
@@ -43384,17 +43518,18 @@ var staticRenderFns = [
                         {
                           staticClass: "nav-link",
                           attrs: {
-                            id: "ex2-tab-2",
-                            "data-mdb-toggle": "tab",
-                            href: "#ex2-tabs-2",
+                            id: "profile-tab",
+                            "data-bs-toggle": "tab",
+                            "data-bs-target": "#profile",
+                            href: "#profile",
                             role: "tab",
-                            "aria-controls": "ex2-tabs-2",
-                            "aria-selected": "false"
+                            "aria-controls": "profile",
+                            "aria-selected": "true"
                           }
                         },
                         [
                           _c("h3", { staticStyle: { color: "#383838" } }, [
-                            _vm._v("SignUp")
+                            _c("b", [_vm._v("Sign Up")])
                           ])
                         ]
                       )
@@ -43403,88 +43538,555 @@ var staticRenderFns = [
                 ]
               ),
               _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticStyle: { float: "left" }, attrs: { for: "" } },
-                  [_c("b", [_vm._v("Email *")])]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control form-control",
-                  attrs: {
-                    type: "text",
-                    name: "email",
-                    placeholder: "janedoe@gmail.com"
-                  }
-                })
-              ]),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticStyle: { float: "left" }, attrs: { for: "" } },
-                  [_c("b", [_vm._v("Password *")])]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control form-control",
-                  attrs: {
-                    type: "password",
-                    name: "email",
-                    placeholder: "Password"
-                  }
-                })
-              ]),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group text-center" }, [
-                _c(
-                  "form",
-                  {
-                    staticClass: "form-inline text-center",
-                    attrs: { action: "/CustomerSignIn" }
-                  },
-                  [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "form-control",
-                        staticStyle: {
-                          "background-color": "blue",
-                          border: "5px",
-                          padding: "10px 30px",
-                          "text-align": "center",
-                          color: "white",
-                          "border-radius": "12px",
-                          "font-style": "bold"
-                        },
-                        attrs: { type: "submit" }
-                      },
-                      [_vm._v("SignIn")]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group text-center" }, [
-                _c("a", { attrs: { href: "#" } }, [
+              _c(
+                "div",
+                { staticClass: "tab-content", attrs: { id: "myTabContent" } },
+                [
                   _c(
-                    "b",
-                    { staticStyle: { color: "blue", "font-style": "bold" } },
-                    [_vm._v("Forgot Password?")]
+                    "div",
+                    {
+                      staticClass: "tab-pane fade show active",
+                      attrs: {
+                        id: "home",
+                        role: "tabpanel",
+                        "aria-labelledby": "home-tab"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticStyle: { float: "left" },
+                            attrs: { for: "" }
+                          },
+                          [_c("b", [_vm._v("Email *")])]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-control",
+                          attrs: {
+                            type: "text",
+                            name: "email",
+                            placeholder: "janedoe@gmail.com"
+                          }
+                        })
+                      ]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticStyle: { float: "left" },
+                            attrs: { for: "" }
+                          },
+                          [_c("b", [_vm._v("Password *")])]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-control",
+                          attrs: {
+                            type: "password",
+                            name: "email",
+                            placeholder: "Password"
+                          }
+                        })
+                      ]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group text-center" }, [
+                        _c(
+                          "form",
+                          {
+                            staticClass: "form-inline text-center",
+                            attrs: { action: "/CustomerSignIn" }
+                          },
+                          [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "form-control",
+                                staticStyle: {
+                                  "background-color": "blue",
+                                  border: "5px",
+                                  padding: "10px 30px",
+                                  "text-align": "center",
+                                  color: "white",
+                                  "border-radius": "12px",
+                                  "font-style": "bold"
+                                },
+                                attrs: { type: "submit" }
+                              },
+                              [_vm._v("Sign In")]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group text-center" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c(
+                            "b",
+                            {
+                              staticStyle: {
+                                color: "blue",
+                                "font-style": "bold"
+                              }
+                            },
+                            [_vm._v("Forgot Password?")]
+                          )
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tab-pane fade",
+                      attrs: {
+                        id: "profile",
+                        role: "tabpanel",
+                        "aria-labelledby": "signup-tab"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticStyle: { float: "left" },
+                            attrs: { for: "" }
+                          },
+                          [_c("b", [_vm._v("Email *")])]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-control",
+                          attrs: {
+                            type: "text",
+                            name: "email",
+                            placeholder: "janedoe@gmail.com"
+                          }
+                        })
+                      ]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticStyle: { float: "left" },
+                            attrs: { for: "" }
+                          },
+                          [_c("b", [_vm._v("Password *")])]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-control",
+                          attrs: {
+                            type: "password",
+                            name: "email",
+                            placeholder: "Password"
+                          }
+                        })
+                      ]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group text-center" }, [
+                        _c(
+                          "form",
+                          {
+                            staticClass: "form-inline text-center",
+                            attrs: { action: "/CustomerSignIn" }
+                          },
+                          [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "form-control",
+                                staticStyle: {
+                                  "background-color": "blue",
+                                  border: "5px",
+                                  padding: "10px 30px",
+                                  "text-align": "center",
+                                  color: "white",
+                                  "border-radius": "12px",
+                                  "font-style": "bold"
+                                },
+                                attrs: { type: "submit" }
+                              },
+                              [_vm._v("Join now")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "text-center" }, [
+                          _vm._v(
+                            "\n                            By joining, you agree to our "
+                          ),
+                          _c("b", { staticStyle: { color: "blue" } }, [
+                            _vm._v("Terms and Conditions")
+                          ]),
+                          _vm._v(" and "),
+                          _c("b", { staticStyle: { color: "blue" } }, [
+                            _vm._v("Privacy Policy")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("br")
+                    ]
                   )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c("div", { staticClass: "modal-dialog modal-lg" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("button", {
+                  staticClass: "btn-close",
+                  attrs: {
+                    type: "button",
+                    "data-bs-dismiss": "modal",
+                    "aria-label": "Close"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "col-lg" }, [
+                  _c("div", { staticClass: "card" }, [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c(
+                        "ul",
+                        {
+                          staticClass: "nav nav-tabs nav-fill mb-3",
+                          attrs: { id: "ex1", role: "tablist" }
+                        },
+                        [
+                          _c(
+                            "li",
+                            {
+                              staticClass: "nav-item",
+                              attrs: { role: "presentation" }
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link active",
+                                  attrs: {
+                                    id: "sign-tab",
+                                    "data-bs-toggle": "tab",
+                                    "data-bs-target": "#sign",
+                                    href: "#sign",
+                                    role: "tab",
+                                    "aria-controls": "sign",
+                                    "aria-selected": "true"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "h3",
+                                    {
+                                      staticStyle: {
+                                        "font-style": "bold",
+                                        color: "blue"
+                                      }
+                                    },
+                                    [_c("b", [_vm._v("Sign In")])]
+                                  )
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            {
+                              staticClass: "nav-item",
+                              attrs: { role: "presentation" }
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    id: "signup-tab",
+                                    "data-bs-toggle": "tab",
+                                    "data-bs-target": "#signup",
+                                    href: "#signup",
+                                    role: "tab",
+                                    "aria-controls": "signup",
+                                    "aria-selected": "true"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "h3",
+                                    { staticStyle: { color: "#383838" } },
+                                    [_c("b", [_vm._v("Sign Up")])]
+                                  )
+                                ]
+                              )
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "tab-content",
+                          attrs: { id: "myTabContent" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "tab-pane fade show active",
+                              attrs: {
+                                id: "sign",
+                                role: "tabpanel",
+                                "aria-labelledby": "sign-tab"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c(
+                                  "label",
+                                  {
+                                    staticStyle: { float: "left" },
+                                    attrs: { for: "" }
+                                  },
+                                  [_c("b", [_vm._v("Email *")])]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  staticClass: "form-control form-control",
+                                  attrs: {
+                                    type: "text",
+                                    name: "email",
+                                    placeholder: "janedoe@gmail.com"
+                                  }
+                                })
+                              ]),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "form-group" }, [
+                                _c(
+                                  "label",
+                                  {
+                                    staticStyle: { float: "left" },
+                                    attrs: { for: "" }
+                                  },
+                                  [_c("b", [_vm._v("Password *")])]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  staticClass: "form-control form-control",
+                                  attrs: {
+                                    type: "password",
+                                    name: "email",
+                                    placeholder: "Password"
+                                  }
+                                })
+                              ]),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "form-group text-center" },
+                                [
+                                  _c(
+                                    "form",
+                                    {
+                                      staticClass: "form-inline text-center",
+                                      attrs: { action: "/CustomerSignIn" }
+                                    },
+                                    [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "form-control",
+                                          staticStyle: {
+                                            "background-color": "blue",
+                                            border: "5px",
+                                            padding: "10px 30px",
+                                            "text-align": "center",
+                                            color: "white",
+                                            "border-radius": "12px",
+                                            "font-style": "bold"
+                                          },
+                                          attrs: { type: "submit" }
+                                        },
+                                        [_vm._v("Sign In")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "form-group text-center" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c(
+                                      "b",
+                                      {
+                                        staticStyle: {
+                                          color: "blue",
+                                          "font-style": "bold"
+                                        }
+                                      },
+                                      [_vm._v("Forgot Password?")]
+                                    )
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "tab-pane fade",
+                              attrs: {
+                                id: "signup",
+                                role: "tabpanel",
+                                "aria-labelledby": "signup-tab"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c(
+                                  "label",
+                                  {
+                                    staticStyle: { float: "left" },
+                                    attrs: { for: "" }
+                                  },
+                                  [_c("b", [_vm._v("Email *")])]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  staticClass: "form-control form-control",
+                                  attrs: {
+                                    type: "text",
+                                    name: "email",
+                                    placeholder: "janedoe@gmail.com"
+                                  }
+                                })
+                              ]),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "form-group" }, [
+                                _c(
+                                  "label",
+                                  {
+                                    staticStyle: { float: "left" },
+                                    attrs: { for: "" }
+                                  },
+                                  [_c("b", [_vm._v("Password *")])]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  staticClass: "form-control form-control",
+                                  attrs: {
+                                    type: "password",
+                                    name: "email",
+                                    placeholder: "Password"
+                                  }
+                                })
+                              ]),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "form-group text-center" },
+                                [
+                                  _c(
+                                    "form",
+                                    {
+                                      staticClass: "form-inline text-center",
+                                      attrs: { action: "/CustomerSignIn" }
+                                    },
+                                    [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "form-control",
+                                          staticStyle: {
+                                            "background-color": "blue",
+                                            border: "5px",
+                                            padding: "10px 30px",
+                                            "text-align": "center",
+                                            color: "white",
+                                            "border-radius": "12px",
+                                            "font-style": "bold"
+                                          },
+                                          attrs: { type: "submit" }
+                                        },
+                                        [_vm._v("Join now")]
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "text-center" }, [
+                                    _vm._v(
+                                      "\n                                    By joining, you agree to our "
+                                    ),
+                                    _c(
+                                      "b",
+                                      { staticStyle: { color: "blue" } },
+                                      [_vm._v("Terms and Conditions")]
+                                    ),
+                                    _vm._v(" and "),
+                                    _c(
+                                      "b",
+                                      { staticStyle: { color: "blue" } },
+                                      [_vm._v("Privacy Policy")]
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("br")
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
                 ])
               ])
             ])
           ])
-        ])
-      ])
+        ]
+      )
     ])
   }
 ]
